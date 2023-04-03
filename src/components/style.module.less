@@ -1,0 +1,63 @@
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.area {
+  position: absolute;
+  border: 1px solid blue;
+  box-sizing: border-box;
+  display: flex;
+  box-shadow: rgb(0, 0, 0) 0px 0px 6px;
+  background: rgb(140, 140, 140);
+  opacity: 0.6;
+  justify-content: center;
+  align-items: center;
+  color: #e5e7eb;
+  cursor: move;
+  .rightBottom {
+    position: absolute;
+    box-sizing: border-box;
+    right: -2px;
+    bottom: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background: #fff;
+    cursor: se-resize;
+  }
+  .leftBottom {
+    position: absolute;
+    box-sizing: border-box;
+    left: -2px;
+    bottom: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background: #fff;
+    margin:0 0 0 auto;
+    cursor: sw-resize;
+  }
+  .leftTop {
+    position: absolute;
+    box-sizing: border-box;
+    left: -2px;
+    top: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background: #fff;
+    cursor: nw-resize;
+  }
+  .rightTop {
+    position: absolute;
+    box-sizing: border-box;
+    right: -2px;
+    top: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background: #fff;
+    cursor: ne-resize;
+  }
+}
